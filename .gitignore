@@ -1,0 +1,51 @@
+# ==========================
+# Altium Designer - Schematic Project
+# ==========================
+
+# History files
+History/
+
+# Preview files
+__Previews__/
+
+# Project cache
+Project Logs for *
+Project Outputs for *
+
+# Workspace cache
+*.SchDocPreview
+*.PcbDocPreview
+
+# Lock files
+*.lck
+
+# Auto-save files
+*.bak
+*.~*
+*.tmp
+
+# Generated reports
+*.LOG
+*.log
+
+# Compiler outputs
+*.REP
+*.RPT
+*.ERR
+
+# Output folders
+Outputs/
+Output/
+Release/
+Debug/
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Altium workspace files
+*.DsnWrk
+*.PrjPcbStructure
