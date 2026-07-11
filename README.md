@@ -1,29 +1,50 @@
-# ⏰ Digital Clock
+# ⏰ Digital Clock using CD4026 and NE555
 
-A 24-hour digital clock designed using **NE555 Timer**, **CD4026 Decade Counter ICs**, combinational reset logic, and **6 Common Cathode 7-Segment Displays**. The project was implemented on a breadboard and documented with complete block diagrams, schematics, and project reports.
+A 24-hour digital clock built using the **NE555 Timer**, **CD4026 Decade Counter/7-Segment Driver**, logic gates, and seven-segment displays. The project was designed, simulated, and implemented on a breadboard with custom reset logic for seconds, minutes, hours, and day counting.
 
 ---
 
-## Features
+## 📌 Features
 
-- 24-Hour Time Format (00–23)
-- Optional Day Counter (00–06)
-- 1 Hz Clock Generation using NE555
-- CD4026-Based Counter Design
+- 24-Hour Digital Clock
+- Seconds (00–59)
+- Minutes (00–59)
+- Hours (00–23)
+- Day Counter
 - Automatic Reset Logic
-- 6 Common Cathode 7-Segment Displays
-- Modular Hardware Design
-- Breadboard Prototype
+- Breadboard Implementation
+- Altium Schematic Design
+- Two Versions of Reset Logic (V1 & V2)
 
 ---
 
-## Components Used
+## 📂 Repository Structure
 
-- NE555 Timer
-- CD4026 Decade Counter ICs
-- Common Cathode 7-Segment Displays
-- Logic Gates
-- 220 Ω Resistors
+```
+Digital_Clock/
+│
+├── Circuit/
+│   └── Digital Clock Schematic/
+│       ├── Digital Clock Schematic V1,V2.pdf
+│       ├── Block Diagram V1, V2.pdf
+│
+├── Images/
+│   └── Block Diagram V1.png
+│
+├── ChronoBit26_Report.pdf
+│
+└── README.md
+```
+
+---
+
+## 🛠 Components Used
+
+- NE555 Timer IC
+- CD4026 Decade Counter
+- 7-Segment Displays
+- Logic Gates (AND, NOT)
+- Resistors
 - Capacitors
 - Breadboard
 - Jumper Wires
@@ -31,64 +52,46 @@ A 24-hour digital clock designed using **NE555 Timer**, **CD4026 Decade Counter 
 
 ---
 
-## Working Principle
+## 📖 Project Description
 
-- NE555 generates a stable **1 Hz clock**.
-- Seconds count from **00–59**.
-- Minutes count from **00–59**.
-- Hours count from **00–23**.
-- (Optional) Day counter increments after every 24-hour cycle.
-- Reset logic automatically resets each counter at its maximum count.
+The NE555 timer is configured as an astable multivibrator to generate the clock pulse. The CD4026 ICs count the pulses and directly drive the seven-segment displays.
 
----
+Custom combinational reset logic is implemented to achieve:
 
-## Project Structure
+- Seconds : 00–59
+- Minutes : 00–59
+- Hours : 00–23
+- Day Counter Increment
 
-```
-Digital Clock
-├── Block Diagrams
-│   ├── Version 1
-│   └── Version 2
-├── Schematics
-├── Documentation
-├── Datasheets
-└── Images
-```
+Two versions of the reset logic were designed and compared.
 
 ---
 
-## Challenges Faced
+## ⚠ Challenges Faced
 
-- **Incorrect 60-count reset:** The counters occasionally failed to reset correctly at 60.
-- **Reset signal instability:** False triggering occurred due to noisy reset signals.
-- **Counter synchronization:** Cascading multiple CD4026 ICs required proper carry propagation.
-- **Module integration:** Integrating seconds, minutes, hours, and day counters together was challenging during testing.
-
-### Solution
-
-- Added **220 Ω resistors** in the reset logic to stabilize the reset signals.
-- Designed and verified **each module (seconds, minutes, hours, and day counter) independently** before integrating them into the complete system.
-- Tested the reset logic separately to ensure accurate transitions at **60 seconds**, **60 minutes**, and **24 hours**.
+- Designing reliable reset logic for the hour counter.
+- Ensuring proper transition from **23 → 00**.
+- Preventing incorrect counts during reset.
+- Debugging timing issues in the NE555 clock pulse.
+- Testing each module independently before integration.
 
 ---
 
-## Future Improvements
+## 📄 Documentation
 
-- PCB Implementation
-- Time Setting Buttons
-- RTC (DS3231) Integration
-- Alarm Function
-- Date & Calendar Display
-- FPGA/Verilog Implementation
+- Project Report
+- Circuit Schematics
+- Block Diagrams
+- Breadboard Implementation
 
 ---
 
-## Contributors
+## 👥 Contributors
 
-- **Denanath S**
-- **Prateeksha B S**
-- **Tejaswini S S**
+- [@denanathsec25](https://github.com/denanathsec25)
+- [@prateeksha23-bs](https://github.com/prateeksha23-bs)
+- [@tejaswiniss399](https://github.com/tejaswiniss399)
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+## ⭐ If you found this project useful, consider giving the repository a Star.
