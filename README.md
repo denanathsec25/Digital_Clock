@@ -20,22 +20,25 @@ A 24-hour digital clock built using the **NE555 Timer**, **CD4026 Decade Counter
 
 ## 📂 Repository Structure
 
-```
+```text
 Digital_Clock/
 │
 ├── Circuit/
 │   └── Digital Clock Schematic/
 │       ├── Digital Clock Schematic V1,V2.pdf
-│       ├── Block Diagram V1, V2.pdf
+│       └── Block Diagram V1,V2.pdf
 │
 ├── Images/
-│   └── Block Diagram V1.png
+│   ├── Block Diagram V1.png
+│   ├── Block Diagram V2.png
+│   ├── Breadboard Setup.jpg        (Optional)
+│   ├── Final Output.jpg            (Optional)
+│   └── Circuit Diagram.png         (Optional)
 │
 ├── ChronoBit26_Report.pdf
 │
 └── README.md
 ```
-
 ---
 
 ## 🛠 Components Used
