@@ -31,9 +31,9 @@ Digital_Clock/
 ├── Images/
 │   ├── Block Diagram V1.png
 │   ├── Block Diagram V2.png
-│   ├── Breadboard Setup.jpg        (Optional)
-│   ├── Final Output.jpg            (Optional)
-│   └── Circuit Diagram.png         (Optional)
+│   ├── Breadboard Setup.jpg        
+│   ├── Final Output.jpg            
+│   └── Circuit Diagram.png         
 │
 ├── ChronoBit26_Report.pdf
 │
