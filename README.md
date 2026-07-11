@@ -85,8 +85,9 @@ Digital Clock
 
 ## Contributors
 
-- **Denanath Shanmugasundaram**
-- **Team Members**
+- **Denanath S**
+- **Prateeksha B S**
+- **Tejaswini S S**
 
 ---
 
