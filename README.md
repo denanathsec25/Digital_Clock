@@ -91,9 +91,9 @@ Two versions of the reset logic were designed and compared.
 
 ## 👥 Contributors
 
-- [@denanathsec25](https://github.com/denanathsec25)
-- [@prateeksha23-bs](https://github.com/prateeksha23-bs)
-- [@tejaswiniss399](https://github.com/tejaswiniss399)
+- [Denanath S](https://github.com/denanathsec25)
+- [Prateeksha B S](https://github.com/prateeksha23-bs)
+- [Tejaswini S S](https://github.com/tejaswiniss399)
 
 ---
 
