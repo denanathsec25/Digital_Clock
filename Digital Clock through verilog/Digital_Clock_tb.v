@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// while runnig stimulation thriugh test bench change localparam clk_freq=10;
 
 module Digital_clk_tb;
 

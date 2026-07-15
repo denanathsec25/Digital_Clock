@@ -29,18 +29,50 @@ begin
     // Active-low: 0 = ON, 1 = OFF
 
     case(bcd)
-        4'd0: seg[6:0] = 7'b1000000;
-        4'd1: seg[6:0] = 7'b1111001;
-        4'd2: seg[6:0] = 7'b0100100;
-        4'd3: seg[6:0] = 7'b0110000;
-        4'd4: seg[6:0] = 7'b0011001;
-        4'd5: seg[6:0] = 7'b0010010;
-        4'd6: seg[6:0] = 7'b0000010;
-        4'd7: seg[6:0] = 7'b1111000;
-        4'd8: seg[6:0] = 7'b0000000;
-        4'd9: seg[6:0] = 7'b0010000;
-
-        default: seg[6:0] = 7'b1111111;
+        4'd0:
+        begin
+            seg[6:0] = 7'b1000000;
+        end
+        4'd1:
+        begin
+            seg[6:0] = 7'b1111001;
+        end
+        4'd2:
+        begin
+             seg[6:0] = 7'b0100100;
+        end
+        4'd3:
+        begin
+             seg[6:0] = 7'b0110000;
+        end
+        4'd4:
+        begin
+            seg[6:0] = 7'b0011001;
+        end
+        4'd5:
+        begin
+            seg[6:0] = 7'b0010010;
+        end
+        4'd6:
+        begin
+              seg[6:0] = 7'b0000010;
+        end
+        4'd7:
+        begin
+            seg[6:0] = 7'b1111000;
+        end
+        4'd8:
+        begin
+            seg[6:0] = 7'b0000000;
+       end
+        4'd9:
+        begin
+            seg[6:0] = 7'b0010000;
+        end
+        default:
+        begin
+            seg[6:0] = 7'b1111111;
+        end
     endcase
     
     if(dp)
