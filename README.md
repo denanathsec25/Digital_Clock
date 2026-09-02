@@ -98,3 +98,5 @@ Two versions of the reset logic were designed and compared.
 ---
 
 ## ⭐ If you found this project useful, consider giving the repository a Star.
+---
+## This Git is free for educational purporse
